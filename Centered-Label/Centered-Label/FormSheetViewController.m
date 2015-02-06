@@ -48,22 +48,36 @@ NSString *const kSecond = @"$19,00,003,928,838.60";
     [self.view addSubview:thirdLabel];
     [thirdLabel sizeToFit];
     thirdLabel.translatesAutoresizingMaskIntoConstraints = NO;
-//    [self.view removeConstraints:self.view.constraints];
+    
+    
+    UILabel *fourthLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 30)];
+    fourthLabel.text = @"10";
+    fourthLabel.font = [UIFont fontWithName:@"Helvetica" size:28];
+    fourthLabel.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:fourthLabel];
+    [fourthLabel sizeToFit];
+    fourthLabel.translatesAutoresizingMaskIntoConstraints = NO;
     
     NSDictionary *metrics = @{@"width":@21.0, @"margin":@30};
     
-    NSDictionary *views = NSDictionaryOfVariableBindings(firstLabel, secondLabel, thirdLabel);
+    NSDictionary *views = NSDictionaryOfVariableBindings(firstLabel, secondLabel, thirdLabel, fourthLabel);
     NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-margin-[firstLabel]-(width)-[secondLabel]-margin-|"
-                                                                   options:0
+                                                                   options:NSLayoutFormatAlignAllCenterY
                                                                    metrics:metrics
                                                                      views:views];
+    
+    constraints = [constraints arrayByAddingObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(>=margin)-[thirdLabel]-(width)-[fourthLabel]-(>=margin)-|"
+                                                                                                     options:NSLayoutFormatAlignAllCenterY
+                                                                                                     metrics:metrics
+                                                                                                       views:views]];
 
-    constraints = [constraints arrayByAddingObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[secondLabel]-10-[thirdLabel]|"
-                                                                                                     options:NSLayoutFormatAlignAllLeft
+
+    constraints = [constraints arrayByAddingObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-54-[firstLabel]-17-[thirdLabel]"
+                                                                                                     options:0
                                                                                                      metrics:0
                                                                                                        views:views]];
     
-    constraints = [constraints arrayByAddingObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[firstLabel]|"
+    constraints = [constraints arrayByAddingObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-50-[secondLabel]-10-[fourthLabel]"
                                                                                                      options:0
                                                                                                      metrics:0
                                                                                                        views:views]];
