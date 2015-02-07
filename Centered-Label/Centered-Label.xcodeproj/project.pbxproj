@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDB46DD41A85ED54007881A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB46DD31A85ED54007881A8 /* main.m */; };
+		BDB46DD71A85ED54007881A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB46DD61A85ED54007881A8 /* AppDelegate.m */; };
+		BDB46DDA1A85ED54007881A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB46DD91A85ED54007881A8 /* ViewController.m */; };
+		BDB46DDD1A85ED54007881A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB46DDB1A85ED54007881A8 /* Main.storyboard */; };
+		BDB46DDF1A85ED54007881A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB46DDE1A85ED54007881A8 /* Images.xcassets */; };
+		BDB46DE21A85ED54007881A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDB46DE01A85ED54007881A8 /* LaunchScreen.xib */; };
+		BDB46DEE1A85ED54007881A8 /* Centered_LabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB46DED1A85ED54007881A8 /* Centered_LabelTests.m */; };
+		BDB46DF91A85EF91007881A8 /* FormSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB46DF81A85EF91007881A8 /* FormSheetViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDB46DE81A85ED54007881A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDB46DC61A85ED54007881A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB46DCD1A85ED54007881A8;
+			remoteInfo = "Centered-Label";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDB46DCE1A85ED54007881A8 /* Centered-Label.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Centered-Label.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB46DD21A85ED54007881A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB46DD31A85ED54007881A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BDB46DD51A85ED54007881A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BDB46DD61A85ED54007881A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BDB46DD81A85ED54007881A8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BDB46DD91A85ED54007881A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BDB46DDC1A85ED54007881A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDB46DDE1A85ED54007881A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BDB46DE11A85ED54007881A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BDB46DE71A85ED54007881A8 /* Centered-LabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Centered-LabelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB46DEC1A85ED54007881A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB46DED1A85ED54007881A8 /* Centered_LabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Centered_LabelTests.m; sourceTree = "<group>"; };
+		BDB46DF71A85EF91007881A8 /* FormSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormSheetViewController.h; sourceTree = "<group>"; };
+		BDB46DF81A85EF91007881A8 /* FormSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormSheetViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDB46DCB1A85ED54007881A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB46DE41A85ED54007881A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDB46DC51A85ED54007881A8 = {
+			isa = PBXGroup;
+			children = (
+				BDB46DD01A85ED54007881A8 /* Centered-Label */,
+				BDB46DEA1A85ED54007881A8 /* Centered-LabelTests */,
+				BDB46DCF1A85ED54007881A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDB46DCF1A85ED54007881A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDB46DCE1A85ED54007881A8 /* Centered-Label.app */,
+				BDB46DE71A85ED54007881A8 /* Centered-LabelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDB46DD01A85ED54007881A8 /* Centered-Label */ = {
+			isa = PBXGroup;
+			children = (
+				BDB46DD51A85ED54007881A8 /* AppDelegate.h */,
+				BDB46DD61A85ED54007881A8 /* AppDelegate.m */,
+				BDB46DD81A85ED54007881A8 /* ViewController.h */,
+				BDB46DD91A85ED54007881A8 /* ViewController.m */,
+				BDB46DDB1A85ED54007881A8 /* Main.storyboard */,
+				BDB46DF71A85EF91007881A8 /* FormSheetViewController.h */,
+				BDB46DF81A85EF91007881A8 /* FormSheetViewController.m */,
+				BDB46DDE1A85ED54007881A8 /* Images.xcassets */,
+				BDB46DE01A85ED54007881A8 /* LaunchScreen.xib */,
+				BDB46DD11A85ED54007881A8 /* Supporting Files */,
+			);
+			path = "Centered-Label";
+			sourceTree = "<group>";
+		};
+		BDB46DD11A85ED54007881A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDB46DD21A85ED54007881A8 /* Info.plist */,
+				BDB46DD31A85ED54007881A8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDB46DEA1A85ED54007881A8 /* Centered-LabelTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDB46DED1A85ED54007881A8 /* Centered_LabelTests.m */,
+				BDB46DEB1A85ED54007881A8 /* Supporting Files */,
+			);
+			path = "Centered-LabelTests";
+			sourceTree = "<group>";
+		};
+		BDB46DEB1A85ED54007881A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDB46DEC1A85ED54007881A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDB46DCD1A85ED54007881A8 /* Centered-Label */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB46DF11A85ED54007881A8 /* Build configuration list for PBXNativeTarget "Centered-Label" */;
+			buildPhases = (
+				BDB46DCA1A85ED54007881A8 /* Sources */,
+				BDB46DCB1A85ED54007881A8 /* Frameworks */,
+				BDB46DCC1A85ED54007881A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Centered-Label";
+			productName = "Centered-Label";
+			productReference = BDB46DCE1A85ED54007881A8 /* Centered-Label.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDB46DE61A85ED54007881A8 /* Centered-LabelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB46DF41A85ED54007881A8 /* Build configuration list for PBXNativeTarget "Centered-LabelTests" */;
+			buildPhases = (
+				BDB46DE31A85ED54007881A8 /* Sources */,
+				BDB46DE41A85ED54007881A8 /* Frameworks */,
+				BDB46DE51A85ED54007881A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDB46DE91A85ED54007881A8 /* PBXTargetDependency */,
+			);
+			name = "Centered-LabelTests";
+			productName = "Centered-LabelTests";
+			productReference = BDB46DE71A85ED54007881A8 /* Centered-LabelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDB46DC61A85ED54007881A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Rohan Aurora";
+				TargetAttributes = {
+					BDB46DCD1A85ED54007881A8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					BDB46DE61A85ED54007881A8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = BDB46DCD1A85ED54007881A8;
+					};
+				};
+			};
+			buildConfigurationList = BDB46DC91A85ED54007881A8 /* Build configuration list for PBXProject "Centered-Label" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDB46DC51A85ED54007881A8;
+			productRefGroup = BDB46DCF1A85ED54007881A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDB46DCD1A85ED54007881A8 /* Centered-Label */,
+				BDB46DE61A85ED54007881A8 /* Centered-LabelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDB46DCC1A85ED54007881A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB46DDD1A85ED54007881A8 /* Main.storyboard in Resources */,
+				BDB46DE21A85ED54007881A8 /* LaunchScreen.xib in Resources */,
+				BDB46DDF1A85ED54007881A8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB46DE51A85ED54007881A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDB46DCA1A85ED54007881A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB46DF91A85EF91007881A8 /* FormSheetViewController.m in Sources */,
+				BDB46DDA1A85ED54007881A8 /* ViewController.m in Sources */,
+				BDB46DD71A85ED54007881A8 /* AppDelegate.m in Sources */,
+				BDB46DD41A85ED54007881A8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB46DE31A85ED54007881A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB46DEE1A85ED54007881A8 /* Centered_LabelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDB46DE91A85ED54007881A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB46DCD1A85ED54007881A8 /* Centered-Label */;
+			targetProxy = BDB46DE81A85ED54007881A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDB46DDB1A85ED54007881A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDB46DDC1A85ED54007881A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDB46DE01A85ED54007881A8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDB46DE11A85ED54007881A8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDB46DEF1A85ED54007881A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		BDB46DF01A85ED54007881A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDB46DF21A85ED54007881A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Centered-Label/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDB46DF31A85ED54007881A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Centered-Label/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BDB46DF51A85ED54007881A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Centered-LabelTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Centered-Label.app/Centered-Label";
+			};
+			name = Debug;
+		};
+		BDB46DF61A85ED54007881A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Centered-LabelTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Centered-Label.app/Centered-Label";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDB46DC91A85ED54007881A8 /* Build configuration list for PBXProject "Centered-Label" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB46DEF1A85ED54007881A8 /* Debug */,
+				BDB46DF01A85ED54007881A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB46DF11A85ED54007881A8 /* Build configuration list for PBXNativeTarget "Centered-Label" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB46DF21A85ED54007881A8 /* Debug */,
+				BDB46DF31A85ED54007881A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDB46DF41A85ED54007881A8 /* Build configuration list for PBXNativeTarget "Centered-LabelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB46DF51A85ED54007881A8 /* Debug */,
+				BDB46DF61A85ED54007881A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDB46DC61A85ED54007881A8 /* Project object */;
+}
