@@ -42,7 +42,7 @@ NSString *const kSecond = @"$19,00,003,928,838.60";
     secondLabel.translatesAutoresizingMaskIntoConstraints = NO;
     
     UILabel *thirdLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 30)];
-    thirdLabel.text = @"Total Savings";
+    thirdLabel.text = @"Rohan's Checking";
     thirdLabel.font = [UIFont fontWithName:@"Helvetica" size:22];
     thirdLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:thirdLabel];
@@ -51,7 +51,7 @@ NSString *const kSecond = @"$19,00,003,928,838.60";
     
     
     UILabel *fourthLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 30)];
-    fourthLabel.text = @"10";
+    fourthLabel.text = @"$1000";
     fourthLabel.font = [UIFont fontWithName:@"Helvetica" size:28];
     fourthLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:fourthLabel];
@@ -59,10 +59,12 @@ NSString *const kSecond = @"$19,00,003,928,838.60";
     fourthLabel.translatesAutoresizingMaskIntoConstraints = NO;
     
     NSDictionary *metrics = @{@"width":@21.0, @"margin":@30};
+    UIView *superview = self.view;
+
     
-    NSDictionary *views = NSDictionaryOfVariableBindings(firstLabel, secondLabel, thirdLabel, fourthLabel);
+    NSDictionary *views = NSDictionaryOfVariableBindings(firstLabel, secondLabel, thirdLabel, fourthLabel, superview);
     NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-margin-[firstLabel]-(width)-[secondLabel]-margin-|"
-                                                                   options:NSLayoutFormatAlignAllCenterY
+                                                                   options:0
                                                                    metrics:metrics
                                                                      views:views];
     
@@ -70,8 +72,16 @@ NSString *const kSecond = @"$19,00,003,928,838.60";
                                                                                                      options:NSLayoutFormatAlignAllCenterY
                                                                                                      metrics:metrics
                                                                                                        views:views]];
+    
+    
+    // Center horizontally
+    
+    constraints = [constraints arrayByAddingObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[superview]-(<=1)-[thirdLabel]"
+                                                                                                     options:NSLayoutFormatAlignAllCenterX
+                                                                                                     metrics:metrics
+                                                                                                       views:views]];
 
-
+    
     constraints = [constraints arrayByAddingObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-54-[firstLabel]-17-[thirdLabel]"
                                                                                                      options:0
                                                                                                      metrics:0
@@ -81,7 +91,7 @@ NSString *const kSecond = @"$19,00,003,928,838.60";
                                                                                                      options:0
                                                                                                      metrics:0
                                                                                                        views:views]];
-    
+
     [self.view addConstraints:constraints];
 
 }
