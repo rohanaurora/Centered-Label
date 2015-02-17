@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD9152E61A9310F3006ED999 /* Demo.png in Resources */ = {isa = PBXBuildFile; fileRef = BD9152E51A9310F3006ED999 /* Demo.png */; };
 		BDB46DD41A85ED54007881A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB46DD31A85ED54007881A8 /* main.m */; };
 		BDB46DD71A85ED54007881A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB46DD61A85ED54007881A8 /* AppDelegate.m */; };
 		BDB46DDA1A85ED54007881A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB46DD91A85ED54007881A8 /* ViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD9152E51A9310F3006ED999 /* Demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Demo.png; sourceTree = "<group>"; };
 		BDB46DCE1A85ED54007881A8 /* Centered-Label.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Centered-Label.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB46DD21A85ED54007881A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDB46DD31A85ED54007881A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		BDB46DD11A85ED54007881A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD9152E51A9310F3006ED999 /* Demo.png */,
 				BDB46DD21A85ED54007881A8 /* Info.plist */,
 				BDB46DD31A85ED54007881A8 /* main.m */,
 			);
@@ -204,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9152E61A9310F3006ED999 /* Demo.png in Resources */,
 				BDB46DDD1A85ED54007881A8 /* Main.storyboard in Resources */,
 				BDB46DE21A85ED54007881A8 /* LaunchScreen.xib in Resources */,
 				BDB46DDF1A85ED54007881A8 /* Images.xcassets in Resources */,
@@ -420,6 +424,7 @@
 				BDB46DF31A85ED54007881A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDB46DF41A85ED54007881A8 /* Build configuration list for PBXNativeTarget "Centered-LabelTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +433,7 @@
 				BDB46DF61A85ED54007881A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
