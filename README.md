@@ -1,11 +1,13 @@
 Centered-Text
 =======
 
-A project to Visual Format Language.
-
 - [Rationale](#rationale)
 - [Usage](#usage)
 - [Demo](#demo)
+
+## Rationale
+A project to try Visual Format Language and center four different labels while acoomodating their string lengths. 
+
 
 ## Usage
 
